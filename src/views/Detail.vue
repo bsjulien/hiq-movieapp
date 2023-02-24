@@ -29,7 +29,7 @@ export default {
       loading.value = true;
       axios
         .get(
-          `http://www.omdbapi.com/?apikey=${process.env.VUE_APP_API_KEY}&i=${route.params.id}&plot=full`
+          `//www.omdbapi.com/?apikey=${process.env.VUE_APP_API_KEY}&i=${route.params.id}&plot=full`
         )
         .then((response) => {
           movie.value = response.data;

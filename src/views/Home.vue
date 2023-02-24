@@ -48,7 +48,7 @@ export default {
         loading.value = true;
         axios
           .get(
-            `http://www.omdbapi.com/?apikey=${process.env.VUE_APP_API_KEY}&s=${searchTerm.value}`
+            `//www.omdbapi.com/?apikey=${process.env.VUE_APP_API_KEY}&s=${searchTerm.value}`
           )
           .then((response) => {
             movies.value = response.data.Search;
